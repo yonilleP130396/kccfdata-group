@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app>
+    <!-- Define the servlet -->
+    <servlet>
+        <servlet-name>GroupServlet</servlet-name>
+        <servlet-class>jsp.servlet.crud.groupgratefulnessmanagementsystem.GroupServlet</servlet-class>
+    </servlet>
+
+    <!-- Map the servlet to a URL pattern -->
+    <servlet-mapping>
+        <servlet-name>GroupServlet</servlet-name>
+        <url-pattern>/list</url-pattern> <!-- Mapping for /list -->
+    </servlet-mapping>
+
+    <!-- You can also map additional URL patterns like /new, /edit -->
+    <servlet-mapping>
+        <servlet-name>GroupServlet</servlet-name>
+        <url-pattern>/new</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GroupServlet</servlet-name>
+        <url-pattern>/insert</url-pattern>
+    </servlet-mapping>
+    <!-- Add more mappings for other actions as needed -->
+</web-app>
